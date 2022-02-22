@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="password-container">
+      <h1 class="password-container__title">
+        Generate a <span class="green">random password</span>
+      </h1>
+      <p class="password-container__desc">
+        Never use an insecure password again.
+      </p>
+      <select name="password-type" id="password-type">
+        <option selected>--Select--</option>
+        <option value="uppercase">Uppercase Alphabets</option>
+        <option value="lowercase">Lowercase Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="special">Special Characters</option>
+        <option value="aplhanumeric">Numbers & Alphabets</option>
+        <option value="mixed">Mixed</option>
+      </select>
+      <button class="password-container__button">
+        <i class="fa-solid fa-bolt"></i>Generate passwords
+      </button>
+      <div class="horizontal-line"></div>
+      <div class="passwords">
+        <div class="password tooltip">
+          <input type="text" class="input-text" value="..." />
+        </div>
+        <div class="password tooltip">
+          <input type="text" class="input-text" value="..." />
+        </div>
+        <div class="password tooltip">
+          <input type="text" class="input-text" value="..." />
+        </div>
+        <div class="password tooltip">
+          <input type="text" class="input-text" value="..." />
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
